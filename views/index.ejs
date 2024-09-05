@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
-    <link rel="stylesheet" href="../public/styles.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <h1><%= title %></h1>
     
-    <% messages.forEach(message => { %>
+    <% messages.forEach((message, index) => { %>
         <div class="message">
             <p><span class="user"><%= message.user %>:</span> <%= message.text %></p>
             <p class="date">Added on: <%= message.added.toLocaleString() %></p>
+            <a href="/message/<%= index %>" class="open-btn">Open</a>
         </div>
     <% }); %>
 

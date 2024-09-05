@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="../public/styles.css">
+</head>
+<body>
+    <h1><%= title %></h1>
+    
+    <div class="message-detail">
+        <h2>Message from <%= message.user %></h2>
+        <p class="message-text"><%= message.text %></p>
+        <p class="date">Added on: <%= message.added.toLocaleString() %></p>
+    </div>
+
+    <a href="/" class="back-link">Back to all messages</a>
+</body>
+</html>

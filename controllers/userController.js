@@ -27,3 +27,16 @@ exports.createMessage = (req, res) => {
   });
   res.redirect('/');
 };
+
+exports.messageDetail = (req, res) => {
+  const messageId = parseInt(req.params.id);
+  if (messageId >= 0 && messageId < messages.length) {
+    res.render('details', { 
+      title: "Message Detail", 
+      message: messages[messageId],
+      messageId: messageId
+    });
+  } else {
+    res.status(404).send('Message not found');
+  }
+};

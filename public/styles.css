@@ -50,3 +50,35 @@ input[type="submit"] {
 input[type="submit"]:hover { 
   background-color: #0056b3; 
 }
+
+.open-btn {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+.open-btn:hover {
+  background-color: #45a049;
+}
+
+.message-detail {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.message-detail h2 {
+  color: #333;
+  margin-top: 0;
+}
+
+.message-text {
+  font-size: 1.1em;
+  line-height: 1.4;
+}
